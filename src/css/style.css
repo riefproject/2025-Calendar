@@ -1,0 +1,100 @@
+html, body {
+    display: flex;
+    flex-direction: column;
+}
+body{
+    background: url(../assets/img/bg.jpg);
+    background-attachment: scroll; 
+    background-size: cover;       
+    background-position: center;  
+    background-repeat: no-repeat; 
+}
+
+/* Custom scrollbar styles */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0B1D27;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #dd6a29;
+    border-radius: 10px;
+    border: none;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #f8833f;
+}
+
+.event {
+    margin-top: 5px;
+    font-size: 0.9em;
+}
+
+.dropdown-menu-custom {
+    backdrop-filter: blur(30px) saturate(180%);
+    -webkit-backdrop-filter: blur(30px) saturate(180%);
+    background-color: rgba(8, 8, 8, 0.8);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+.dropdown-menu-custom .form-check-label {
+    margin-left: .75rem;         
+    color:#fff !important
+}
+.dropdown-menu-custom .form-check {
+    margin-left: 1.5rem;
+    margin-bottom: 10px;       
+}
+
+.dropdown-menu-custom .form-check:last-child {
+    margin-bottom: 0;          
+}
+
+.calendar-table {
+    table-layout: fixed;
+    width: 100%;
+}
+
+.calendar-cell {
+    width: 14.28%; /* 100% / 7 days */
+}
+.main {
+    backdrop-filter: blur(10px) saturate(200%);
+    -webkit-backdrop-filter: blur(10px) saturate(200%);
+    background-color: rgba(0, 0, 0, 0.35);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    min-height: 75vh;
+    flex: 1; 
+    }
+
+table th,
+.events-table td,
+.events-table tr
+{
+    background-color: transparent !important;
+}
+.no-border {
+    border: none;
+}
+
+.no-border td, .no-border th {
+    border: none;
+}
+
+@media (max-width: 768px) {
+    body{
+        background:url("../assets/img/bg-mobile.jpg");
+        background-size: cover;        
+        background-position: center;   
+        background-repeat: no-repeat;  
+        background-attachment: scroll;
+        min-height: 150vh;
+    }
+}
+
